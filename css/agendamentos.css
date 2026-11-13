@@ -1,0 +1,30 @@
+.titulo-agendamentos {
+    text-align: center;
+    color: #d856b1;
+    border: 1px solid #d856b1;
+    padding: 8px;
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 6px;
+    font-size: 22px;
+}
+
+.area-agendamentos {
+    border: 2px dotted #d856b1;
+    padding: 205px;
+    width: 400px;
+    margin: 60px auto;
+    border-radius: 20px;
+}
+
+.area-agendamentos label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.area-agendamentos input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
