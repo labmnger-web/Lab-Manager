@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+.header-logo img {
+    width: 150px;
+    
+}
+
+.page-content {
+    display: flex;
+    flex: 1;
+}
+.sidebar {
+    width: 90px;
+    min-height: 20vh;
+    background-color: #538fde;
+    padding: 25px;
+    margin-bottom: 0.1cm;
+}
+
+.sidebar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    left: 30px;
+    top: 50p;
+    margin-top: 50px;
+    padding: 15px;
+    width: 430px;
+    background-color: #e245ab;
+    border-radius: 10px;
+    box-shadow: 0 2px 9px hwb(319 41% 7%);
+}
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: #e245ab;
+    background-color: #fbf9fb;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.menu a:hover {
+    background-color: #f7a9d5b6;
+}
+
+.main-content {
+    flex: 2;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    justify-content: center;
+    gap: 40px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card-agendamentos {
+     margin-left: -170px;
+
+}
+
+.card-agendamentos img {
+    width: 400px;
+    cursor: pointer;
+}
+
+.card-vidrarias {
+     margin-left: 200px;
+     margin-top: -70px;
+}
+
+.card-vidrarias img {
+    width: 200px;
+    cursor: pointer;
+}
+
+.card-reagentes {
+  margin-left: -90px;
+}
+
+.card-reagentes img {
+    width: 120px;
+    cursor: pointer;
+}
+
+.card-sos {
+    margin-left: 200px;
+        margin-top: 30px;
+}
+
+.card-sos img {
+    width: 180px;
+    cursor: pointer;
+}
+
+
+.area-cards {
+    width: 1300px;
+    margin: 50px auto;
+    padding: 80px;
+    border: 1px solid #e245ab;
+    border-radius: 15px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    justify-content: center;
+    gap: 80px;
+}
+
+
+
+
+
+.footer {
+    background-color: #538fde;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+      margin-top: auto;
+}
