@@ -1,0 +1,31 @@
+table {
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 12px 12px;
+    text-align: center;
+      background-color: #d856b1;
+
+}
+
+th {
+    padding: 10px 10px;
+    color: #f4f0f2;
+}
+
+.linha-reagente td {
+    background-color: #e9ece7;
+    padding: 8px;
+}
+
+.linha-reagente td:first-child {
+    border-radius: 70px 0 0 70px;
+}
+
+.linha-reagente td:last-child {
+    border-radius: 0 70px 70px 0;
+}
+
+button img {
+    width: 18px;
+    height: 18px;
+}
