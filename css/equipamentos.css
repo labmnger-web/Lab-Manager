@@ -1,0 +1,41 @@
+
+table {
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 12px 12px;
+    text-align: center;
+    background-color: #d856b1;
+}
+
+.titulo-equipamentos {
+    text-align: center;
+    background-color: #d856b1;
+    color: white;
+    padding: 10px;
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 8px;
+    font-size: 22px;
+}
+th {
+    padding: 10px 10px;
+    color: #f4f0f2;
+}
+
+.linha-equipamentos td {
+    background-color: #e9ece7;
+    padding: 8px;
+}
+
+.linha-equipamentos td:first-child {
+    border-radius: 70px 0 0 70px;
+}
+
+.linha-equipamentos td:last-child {
+    border-radius: 0 70px 70px 0;
+}
+
+button img {
+    width: 18px;
+    height: 18px;
+}
