@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabManager - Equipamentos </title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/equipamentos.css">
+</head>
+
+<body>
+
+    <header class="header-content">
+        <div class="header-logo">
+            <a href="../html/index.html">
+                <img src="../img/logo.png" alt="Logo">
+            </a>
+        </div>
+    </header>
+
+    <div class="page-content">
+
+        <aside class="sidebar">
+            <div class="menu-container">
+                <button id="menu-button">☰</button>
+
+                 <div id="menu" class="menu">
+                    <a href="../html/pag-agendamentos.html">Agendamento</a>
+                    <a href="../html/pag-vidrarias.html">Vidrarias</a>
+                    <a href="../html/pag-reagentes.html">Reagentes</a>
+                    <a href="../html/pag-equipamentos.html">Equipamentos</a>
+                     <a href="../html/pag-equipamentos.html">Histórico Geral</a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+           <h1 class="titulo-equipamentos">Vestimentas e equipamentos de proteção</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Item</th>
+                        <th>Quantidade</th>
+                        <th>Localização</th>
+                        <th>Disponibilidade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="linha-equipamentos">
+                        <td>001</td>
+                        <td>Jaleco</td>
+                        <td>10</td>
+                        <td>Armário A</td>
+                        <td>Disponível</td>
+                       <td>
+                            <button class="btn-editar">
+                                <img src="../img/editar.png" alt="Editar">
+                            </button>
+                        </td>
+                        <td>
+                            <button class="btn-excluir">
+                                <img src="../img/excluir.png" alt="Excluir">
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+
+    </div>
+
+    <footer class="footer">
+        <p>Contato: labmnger@gmail.com</p>
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>
