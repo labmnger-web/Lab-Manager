@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LabManager - Equipamentos </title>
-
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/equipamentos.css">
-</head>
+    <link rel="stylesheet" href="../css/agendamentos.css">
 
+    <title>LabManager - Agendamento do laboraório de química</title>
+</head>
 <body>
 
-    <header class="header-content">
-        <div class="header-logo">
-            <a href="../html/index.html">
-                <img src="../img/logo.png" alt="Logo">
-            </a>
-        </div>
-    </header>
+     <header class="header-content">
+    <div class="header-logo">
+        <a href="../html/index.html">
+            <img src="../img/logo.png" alt="Logo">
+        </a>
+    </div>
+     </header>
 
     <div class="page-content">
 
@@ -30,59 +29,36 @@
                     <a href="../html/pag-vidrarias.html">Vidrarias</a>
                     <a href="../html/pag-reagentes.html">Reagentes</a>
                     <a href="../html/pag-equipamentos.html">Equipamentos</a>
-                     <a href="../html/pag-equipamentos.html">Histórico Geral</a>
                 </div>
             </div>
         </aside>
 
         <main class="main-content">
+            <h1 class="titulo-agendamentos">Agendamento do laboratório de química - IFRS </h1>
+         <form class="area-agendamentos" action="/agendamentos" method="POST">
 
-           <h1 class="titulo-equipamentos">Vestimentas e equipamentos de proteção</h1>
+            <label for="professor">Professor(a):</label>
+            <input type="text" id="professor" name="professor"
+                placeholder="Professor, digite seu nome" required>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Código</th>
-                        <th>Item</th>
-                        <th>Quantidade</th>
-                        <th>Localização</th>
-                        <th>Disponibilidade</th>
-                    </tr>
-                </thead>
+            <label for="horario">Horário e turno:</label>
+            <input type="text" id="horario" name="horario"
+                placeholder="Ex: 14h - Tarde" required>
 
-                <tbody>
-                    <tr class="linha-equipamentos">
-                        <td>001</td>
-                        <td>Jaleco</td>
-                        <td>10</td>
-                        <td>Armário A</td>
-                        <td>Disponível</td>
-                       <td>
-                            <button class="btn-editar">
-                                <img src="../img/editar.png" alt="Editar">
-                            </button>
-                        </td>
-                        <td>
-                            <button class="btn-excluir">
-                                <img src="../img/excluir.png" alt="Excluir">
-                            </button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-                 <a href="pag-cadastro-equipamentos.html" class="botao-cadastro">
-                    + Cadastrar novo equipamento
-                 </a>
+            <button type="submit">Agendar</button>
 
-        </main>
+        </form>
+      
+       </main>
 
     </div>
 
-    <footer class="footer">
-        <p>Contato: labmnger@gmail.com</p>
-    </footer>
+        <footer class="footer">
+      <p>Contato:labmnger@gmail.com</p>
+         </footer>
 
     <script src="../script.js"></script>
 
 </body>
 </html>
+
