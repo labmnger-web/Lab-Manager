@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de reagentes - LabManager</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/reagentes.css">
+</head>
+<body>
+
+    <header class="header-content">
+        <div class="header-logo">
+            <a href="../html/index.html">
+                <img src="../img/logo.png" alt="Logo">
+            </a>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <aside class="sidebar">
+            <div class="menu-container">
+
+                <button id="menu-button">☰</button>
+                  <div id="menu" class="menu">
+                    <a href="../html/pag-agendamentos.html">Agendamentos</a>
+                    <a href="../html/pag-vidrarias.html">Vidrarias</a>
+                    <a href="../html/pag-reagentes.html">Reagentes</a>
+                    <a href="../html/pag-equipamentos.html">Equipamentos</a>
+                     <a href="../html/pag-equipamentos.html">Histórico Geral</a>
+                </div>
+            </div>
+        </aside>
+    <main class="main-content">
+        <h1 class="titulo-reagentes">Cadastro de reagentes</h1>
+        <form class="cadastro-form">
+             <label for="f">F:</label>
+             <input type="number" id="f" name="f"
+                placeholder="Digite o código" required>
+
+            <label for="reagente">Reagente:</label>
+            <input type="text" id="reagente" name="reagente"
+                placeholder="Digite o nome do reagente" required>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade"
+                placeholder="Digite a quantidade" required>
+
+            <label for="armario">Armário:</label>
+            <input type="text" id="armario" name="armario"
+                placeholder="Digite o armário" required>
+
+            <label for="massa-volume">Massa/Volume:</label>
+            <input type="text" id="massa-volume" name="massa-volume"
+                placeholder="Ex: 500 g ou 1 L" required>
+
+            <label for="tipo">Tipo:</label>
+            <input type="text" id="tipo" name="tipo"
+                placeholder="Digite o tipo" required>
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+
+</main>
+      
+    </div>
+
+    <footer class="footer">
+        <p>Contato: labmnger@gmail.com</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
