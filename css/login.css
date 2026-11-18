@@ -18,14 +18,14 @@ body {
 
 .header-logo img {
     width: 300px;
-    margin-top: 90px;
+    margin-top: 20px;
     
 }
 .login-container {
     background-color: white;
-    padding: 200px;
+    padding: 150px;
     border-radius: 20px;
-    width: 250px;
+    width: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,13 +46,40 @@ body {
     padding: 12px;
     width: 100%;
     margin-bottom: 35px;
-    font-size: 16px;
+    font-size: 20px;
 }
-
+.login-container h1 {
+    font-size: 30px;
+    color: #0b0b0b;
+    white-space: nowrap;
+    padding: 10px;
+}
 .login-container button {
     padding: 10px 150px;
     background-color: #1a8df1;
     border-radius: 12px;
     color: white;
     border: none;
+}
+.cadastro-link {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: -140px;
+    color: #777375;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cadastro-link:hover {
+    text-decoration: underline;
+}
+.voltar-login {
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #777375;
+    text-decoration: none;
+    font-weight: bold;
 }
