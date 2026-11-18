@@ -1,20 +1,27 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabManager - SOS</title>
+
     <link rel="stylesheet" href="../css/main.css">
-    
-    <title>LabManager - Contatos de Emergência</title>
+    <link rel="stylesheet" href="../css/sos.css">
 </head>
+
 <body>
 
-     <header class="header-content">
-    <div class="header-logo">
-        <a href="../html/index.html">
-            <img src="../img/logo.png" alt="Logo">
-        </a>
-    </div>
+    <header class="header-content">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="../img/logo.png" alt="Logo do LabManager">
+            </a>
+        </div>
+
+        <div class="usuario-logado">
+            <span id="nome-usuario">Nome do usuário</span>
+        </div>
     </header>
 
     <div class="page-content">
@@ -24,26 +31,89 @@
                 <button id="menu-button">☰</button>
 
                 <div id="menu" class="menu">
+                    <a href="../html/index.html">Página inicial</a>
                     <a href="../html/pag-agendamentos.html">Agendamento</a>
                     <a href="../html/pag-vidrarias.html">Vidrarias</a>
                     <a href="../html/pag-reagentes.html">Reagentes</a>
+                     <a href="../html/pag-sos.html">Contatos de emergência</a>
                     <a href="../html/pag-equipamentos.html">Equipamentos</a>
-                    <a href="../html/pag-equipamentos.html">Histórico Geral</a>
-                    <a href="../html/pag-equipamentos.html">Histórico Geral</a>
+                    <a href="../html/pag-historico.html">Histórico geral</a>
                 </div>
             </div>
         </aside>
 
         <main class="main-content">
-    
-            
-       </main>
 
+            <h1 class="titulo-sos">Números de emergência</h1>
+
+            <div class="area-sos">
+
+                <a href="pag-cadastro-sos.html" class="botao-cadastro">
+                    + Cadastrar novo contato
+                </a>
+
+                <table class="tabela-sos">
+
+                    <thead>
+                        <tr>
+                            <th>Serviço</th>
+                            <th>Número</th>
+                            <th>Excluir</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>SAMU</td>
+                            <td>192</td>
+                            <td>
+                                <button class="btn-excluir">
+                                    <img src="../img/excluir.png" alt="Excluir">
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Bombeiros</td>
+                            <td>193</td>
+                            <td>
+                                <button class="btn-excluir">
+                                    <img src="../img/excluir.png" alt="Excluir">
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Polícia Militar</td>
+                            <td>190</td>
+                            <td>
+                                <button class="btn-excluir">
+                                    <img src="../img/excluir.png" alt="Excluir">
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Defesa Civil</td>
+                            <td>199</td>
+                            <td>
+                                <button class="btn-excluir">
+                                    <img src="../img/excluir.png" alt="Excluir">
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
     </div>
 
-        <footer class="footer">
-       <p>Contato:labmnger@gmail.com</p>
-         </footer>
+    <footer class="footer">
+        <p>Contato: labmnger@gmail.com</p>
+    </footer>
 
     <script src="../script.js"></script>
 
