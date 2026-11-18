@@ -5,7 +5,24 @@ table {
     text-align: center;
       background-color: #d856b1;
 }
+.barra-pesquisa {
+    margin: 30px 50px;
+    text-align: right;
+}
 
+.barra-pesquisa input {
+    padding: 9px;
+    width: 260px;
+    border: 2px solid #d856b1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.barra-pesquisa input:focus {
+    outline: none;
+     padding: 9px;
+    border: 2px solid #d856b1;
+}
 th {
     padding: 10px 10px;
     color: #f4f0f2;
