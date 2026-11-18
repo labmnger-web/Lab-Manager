@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabManager - Cadastro de contato SOS</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/sos.css">
+</head>
+
+<body>
+
+    <header class="header-content">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="../img/logo.png" alt="Logo do LabManager">
+            </a>
+        </div>
+
+        <div class="usuario-logado">
+            <span id="nome-usuario">Nome do usuário</span>
+        </div>
+    </header>
+
+    <div class="page-content">
+
+        <aside class="sidebar">
+            <div class="menu-container">
+                <button id="menu-button">☰</button>
+
+                <div id="menu" class="menu">
+                 <a href="../html/index.html">Página inicial</a>
+                    <a href="../html/pag-agendamentos.html">Agendamento</a>
+                    <a href="../html/pag-vidrarias.html">Vidrarias</a>
+                    <a href="../html/pag-reagentes.html">Reagentes</a>
+                     <a href="../html/pag-sos.html">Contatos de emergência</a>
+                    <a href="../html/pag-equipamentos.html">Equipamentos</a>
+                    <a href="../html/pag-historico.html">Histórico geral</a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <h1 class="titulo-sos">Cadastrar contato de emergência</h1>
+
+            <form class="cadastro-form" action="/cadastro-sos" method="POST">
+
+                <label for="servico">Serviço:</label>
+                <input type="text" id="servico" name="servico"
+                    placeholder="Digite o nome do serviço" required>
+
+                <label for="numero">Número:</label>
+                <input type="tel" id="numero" name="numero"
+                    placeholder="Digite o número de emergência" required>
+
+                <button type="submit">Cadastrar</button>
+
+            </form>
+
+            <a href="pag-sos.html" class="voltar-login">
+                Voltar 
+            </a>
+
+        </main>
+
+    </div>
+
+    <footer class="footer">
+        <p>Contato: labmnger@gmail.com</p>
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>
