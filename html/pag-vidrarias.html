@@ -18,6 +18,9 @@
             <a href="../html/index.html">
                 <img src="../img/logo.png" alt="Logo">
             </a>
+            <div class="usuario-logado">
+                <span id="nome-usuario">Nome do usuário</span>
+            </div>
         </div>
     </header>
 
@@ -28,9 +31,11 @@
                 <button id="menu-button">☰</button>
 
                 <div id="menu" class="menu">
+                    <a href="../html/index.html">Página inicial</a>
                     <a href="../html/pag-agendamentos.html">Agendamento</a>
                     <a href="../html/pag-vidrarias.html">Vidrarias</a>
                     <a href="../html/pag-reagentes.html">Reagentes</a>
+                     <a href="../html/pag-sos.html">Contatos de emergência</a>
                     <a href="../html/pag-equipamentos.html">Equipamentos</a>
                     <a href="../html/pag-equipamentos.html">Histórico Geral</a>
                 </div>
@@ -38,8 +43,10 @@
         </aside>
 
         <main class="main-content">
-
            <h1 class="titulo-cadastro">Vidrarias</h1>
+            <div class="barra-pesquisa">
+                <input type="text" id="pesquisa" placeholder="Pesquisar...">
+            </div>
 
             <table>
                 <thead>
@@ -63,9 +70,9 @@
                         <td>Vidro</td>
                         <td>5</td>
                         <td>
-                            <button class="btn-editar">
-                                <img src="../img/editar.png" alt="Editar">
-                            </button>
+                        <a href="pag-editar-vidrarias.html?id=1" class="btn-editar">
+                            <img src="../img/editar.png" alt="Editar">
+                        </a>      
                         </td>
                         <td>
                             <button class="btn-excluir">
@@ -73,25 +80,6 @@
                             </button>
                         </td>
                     </tr>
-
-                    <tr class="linha-vidrarias">
-                        <td>Proveta</td>
-                        <td>100</td>
-                        <td>mL</td>
-                        <td>Vidro</td>
-                        <td>3</td>
-                        <td>
-                            <button class="btn-editar">
-                                <img src="../img/editar.png" alt="Editar">
-                            </button>
-                        </td>
-                        <td>
-                            <button class="btn-excluir">
-                                <img src="../img/excluir.png" alt="Excluir">
-                            </button>
-                        </td>
-                    </tr>
-
                 </tbody>
             </table>
                      <a href="pag-cadastro-vidrarias.html" class="botao-cadastro">
@@ -101,9 +89,10 @@
 
     </div>
 
-    <footer class="footer">
-        <p>Contato: labmnger@gmail.com</p>
-    </footer>
+        <footer class="footer">
+            <p>Contato: labmnger@gmail.com</p>
+            <img src="../img/logoif.png" alt="Logo do LabManager">
+        </footer>
 
     <script src="../script.js"></script>
 
