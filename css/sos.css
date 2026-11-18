@@ -1,0 +1,120 @@
+.tabela-sos {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #d856b1;
+    
+}
+
+.tabela-sos th,
+.tabela-sos td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #d856b1;
+}
+
+.tabela-sos th {
+    background-color: #d856b1;
+    color: white;
+}
+
+
+.area-sos .botao-cadastro {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    background-color: #d856b1;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.area-sos .botao-cadastro:hover {
+    background-color: #b83e91;
+}
+
+.btn-excluir img {
+    width: 20px;
+    height: 20px;
+}
+
+.titulo-sos {
+    color: #e844b7;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 26px;
+}
+
+.area-sos {
+    width: 850px;
+    margin: 40px auto;
+    padding: 90px;
+    border: 1px solid #d856b1;
+    border-radius: 15px;
+}
+
+
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 450px;
+    margin: 0 auto 30px;
+    padding: 35px;
+    background-color: white;
+    border: 1px solid #d856b1;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.cadastro-form label {
+    color: #d856b1;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.cadastro-form input {
+    padding: 12px;
+    border-color: #d856b1;
+    border: 1px solid #d856b1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.cadastro-form input:focus {
+    border-color: #d856b1;
+    box-shadow: 0 0 4px rgba(216, 86, 177, 0.3);
+}
+
+.cadastro-form button {
+    margin-top: 20px;
+    padding: 13px;
+    background-color: #d856b1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cadastro-form button:hover {
+    background-color: #b83e91;
+}
+
+.voltar-login {
+    display: block;
+    text-align: left;
+    margin: 0 auto 30px;
+    width: 450px;
+    color: #666;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.voltar-login:hover {
+    text-decoration: underline;
+}
