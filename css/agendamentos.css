@@ -50,7 +50,13 @@
     font-weight: bold;
     cursor: pointer;
 }
-
 .area-agendamentos button:hover {
     background-color: #b83e91;
+}
+.area-cards {
+    width: 1300px;
+    margin: 50px auto;
+    padding: 80px;
+    border: 1px solid #e245ab;
+    border-radius: 15px;
 }
