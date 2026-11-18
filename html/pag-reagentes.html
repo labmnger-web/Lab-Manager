@@ -17,6 +17,9 @@
         <a href="../html/index.html">
             <img src="../img/logo.png" alt="Logo">
         </a>
+            <div class="usuario-logado">
+                <span id="nome-usuario">Nome do usuário</span>
+            </div>
     </div>
     </header>
     
@@ -27,17 +30,22 @@
             <div class="menu-container">
                 <button id="menu-button">☰</button>
                 <div id="menu" class="menu">
+                     <a href="../html/index.html">Página inicial</a>
                     <a href="../html/pag-agendamentos.html">Agendamento</a>
                     <a href="../html/pag-vidrarias.html">Vidrarias</a>
                     <a href="../html/pag-reagentes.html">Reagentes</a>
+                     <a href="../html/pag-sos.html">Contatos de emergência</a>
                     <a href="../html/pag-equipamentos.html">Equipamentos</a>
-                    <a href="../html/pag-equipamentos.html">Histórico Geral</a>
+                    <a href="../html/pag-historico.html">Histórico geral</a>
                 </div>
             </div>
         </aside>
 
         <main class="main-content">
-           <h1 class="titulo-reagentes">Reagentes</h1>
+                <h1 class="titulo-reagentes">Reagentes</h1>
+            <div class="barra-pesquisa">
+                <input type="text" id="pesquisa" placeholder="Pesquisar...">
+            </div>
 
             <table>
                 <thead>
@@ -49,9 +57,9 @@
                         <th>Massa/Vol.</th>
                         <th>Tipo</th>
                         <td>
-                            <button class="btn-editar">
-                                <img src="../img/editar.png" alt="Editar">
-                            </button>
+                           <a href="pag-editar-reagentes.html?id=1" class="btn-editar">
+                            <img src="../img/editar.png" alt="Editar">
+                            </a>
                         </td>
                         <td>
                             <button class="btn-excluir">
@@ -70,9 +78,9 @@
                         <td>500 ml</td>
                         <td>Líquido</td>
                         <td>
-                            <button class="btn-editar">
-                                <img src="../img/editar.png" alt="Editar">
-                            </button>
+                            <a href="pag-editar-reagentes.html?id=1" class="btn-editar">
+                            <img src="../img/editar.png" alt="Editar">
+                            </a>
                         </td>
                         <td>
                             <button class="btn-excluir">
@@ -88,12 +96,10 @@
         </main>
 
     </div>
-
-    <footer class="footer">
-       
-    <footer class="footer">
-        <p>Contato:labmnger@gmail.com</p>
-         </footer>
+        <footer class="footer">
+            <p>Contato: labmnger@gmail.com</p>
+            <img src="../img/logoif.png" alt="Logo do LabManager">
+        </footer>
 
     <script src="../script.js"></script>
 
