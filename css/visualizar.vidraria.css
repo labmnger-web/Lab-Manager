@@ -1,0 +1,66 @@
+.titulo-vidrarias {
+    text-align: center;
+    color: #d856b1;
+    margin: 30px 20px;
+}
+.tabela-visualizar-vidraria {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tabela-visualizar-vidraria table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-visualizar-vidraria th,
+.tabela-visualizar-vidraria td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+}
+.tabela-visualizar-vidraria th {
+    background-color: #d856b1;
+    color: white;
+}
+.voltar-vidrarias {
+    display: inline-block;
+    margin: 20px;
+    padding: 8px 15px;
+    background-color: #d856b1;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.voltar-vidrarias:hover {
+    background-color: #c4429e;
+}
+@media (max-width: 768px) {
+
+    .titulo-vidrarias {
+        font-size: 22px;
+        margin: 20px 10px;
+    }
+
+    .tabela-visualizar-vidraria {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .tabela-visualizar-vidraria table {
+        min-width: 1000px;
+    }
+
+    .tabela-visualizar-vidraria th,
+    .tabela-visualizar-vidraria td {
+        padding: 10px;
+    }
+
+    .voltar-vidrarias {
+        margin: 15px 10px;
+    }
+
+}
