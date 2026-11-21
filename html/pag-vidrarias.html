@@ -43,21 +43,29 @@
         </aside>
 
         <main class="main-content">
-           <h1 class="titulo-cadastro">Vidrarias</h1>
+           <h1 class="titulo-vidrarias">Vidrarias</h1>
             <div class="barra-pesquisa">
                 <input type="text" id="pesquisa" placeholder="Pesquisar...">
             </div>
-
+        <div class="tabela-container">
             <table>
                 <thead>
                     <tr>
-                        <th>Vidraria</th>
+                        <th>Nome</th>
                         <th>Capacidade</th>
                         <th>Unidade de medida</th>
                         <th>Material</th>
                         <th>Quantidade</th>
-                        <th>Editar</th>
-                        <th>Excluir</th>
+                        <td>
+                           <a href="pag-editar-vidrarias.html" class="btn-editar">
+                            <img src="../img/editar.png" alt="Editar">
+                            </a>
+                        </td>
+                        <td>
+                            <button class="btn-excluir">
+                                <img src="../img/excluir.png" alt="Excluir">
+                            </button>
+                        </td>
                     </tr>
                 </thead>
 
@@ -82,6 +90,7 @@
                     </tr>
                 </tbody>
             </table>
+        </div>            
                      <a href="pag-cadastro-vidrarias.html" class="botao-cadastro">
                         + Cadastrar nova vidraria
                      </a>
