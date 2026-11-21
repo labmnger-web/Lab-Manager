@@ -43,30 +43,36 @@
 
         <main class="main-content">
 
-           <h1 class="titulo-equipamentos">Vestimentas e equipamentos de proteção</h1>
-
+           <h1 class="titulo-equipamentos">Equipamentos e vestimentas</h1>
+        <div class="tabela-container">
             <table>
                 <thead>
                     <tr>
-                        <th>Código</th>
                         <th>Item</th>
                         <th>Quantidade</th>
-                        <th>Localização</th>
-                        <th>Disponibilidade</th>
+                        <th>Armário</th>
+                          <td>
+                           <a href="pag-editar-equipamentos.html" class="btn-editar">
+                            <img src="../img/editar.png" alt="Editar">
+                            </a>
+                        </td>
+                        <td>
+                            <button class="btn-excluir">
+                                <img src="../img/excluir.png" alt="Excluir">
+                            </button>
+                        </td>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr class="linha-equipamentos">
-                        <td>001</td>
                         <td>Jaleco</td>
                         <td>10</td>
-                        <td>Armário A</td>
-                        <td>Disponível</td>
+                        <td>Armário</td>
                        <td>
-                            <button class="btn-editar">
+                           <a href="pag-editar-equipamentos.html" class="link-editar">
                                 <img src="../img/editar.png" alt="Editar">
-                            </button>
+                            </a>
                         </td>
                         <td>
                             <button class="btn-excluir">
@@ -76,6 +82,7 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
                  <a href="pag-cadastro-equipamentos.html" class="botao-cadastro">
                     + Cadastrar novo equipamento
                  </a>
