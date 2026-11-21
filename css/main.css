@@ -1,4 +1,6 @@
+
 body {
+    width: 100%;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -6,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .header-content {
     display: flex;
     align-items: center;
@@ -14,7 +17,7 @@ body {
 }
 
 .header-logo img {
-    width: 150px;
+    width: 140px;
 }
 
 .usuario-logado {
@@ -25,7 +28,7 @@ body {
     border-radius: 20px;
     color: #0e0e0e;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 24px;
 }
 
 .mensagem-boas-vindas {
@@ -34,16 +37,18 @@ body {
     color: #e245abe7;
     font-size: 18px;
 }
+
 .page-content {
     display: flex;
     flex: 1;
+    min-height: 0;
 }
 
 .sidebar {
-    width: 90px;
+    width: 100px;
     min-height: 20vh;
     background-color: #538fde;
-    padding: 25px;
+    padding: 20px;
     margin-bottom: 0.1cm;
 }
 
@@ -51,24 +56,27 @@ body {
     background: none;
     border: none;
     color: white;
-    font-size: 40px;
+    font-size: 45px;
     cursor: pointer;
 }
 
 .menu-container {
     position: relative;
 }
+
 .menu {
     display: none;
     position: absolute;
-    left: 20px;
-    top: 50px;
-    margin-top: 20px;
-    padding: 15px;
-    width: 270px;
+    left: 40px;
+    top: 40px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 300px;
     background-color: #e245ab;
     border-radius: 10px;
-    box-shadow: 0 7px 9px hwb(319 41% 7%);
+    box-shadow: 0 10px 19px hwb(319 41% 7%);
+    font-size: 20px;
+    box-sizing: border-box;
 }
 
 .menu a {
@@ -77,34 +85,41 @@ body {
     color: #e245ab;
     background-color: #fbf9fb;
     padding: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     border-radius: 9px;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
 }
 
 .menu a:hover {
     background-color: #f7a9d5b6;
 }
+
 .main-content {
-    flex: 2;
+    flex: 3;
     min-width: 0;
 }
+
 .area-cards {
     width: 100%;
-    max-width: 2000px;
-    margin: 50px auto;
-    padding: 70px;
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 18px;
     box-sizing: border-box;
     border: 1px solid #e245ab;
     border-radius: 15px;
 }
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-content: center;
     justify-items: center;
-    gap: 50px 40px;
+    gap: 12px 10px;
 }
+
 .card-agendamentos,
 .card-vidrarias,
 .card-reagentes,
@@ -116,51 +131,55 @@ body {
     margin: 0;
     text-align: center;
 }
+
 .card-agendamentos img {
     width: 100%;
-    max-width: 390px;
-    padding: 45px;
+    max-width: 280px;
+    padding: 8px;
     cursor: pointer;
 }
 
 .card-vidrarias img {
     width: 100%;
-    max-width: 190px;
+    max-width: 130px;
     cursor: pointer;
 }
 
 .card-reagentes img {
     width: 100%;
-    max-width: 160px;
+    max-width: 120px;
     cursor: pointer;
 }
 
 .card-sos img {
     width: 100%;
-    max-width: 190px;
+    max-width: 140px;
     cursor: pointer;
-    padding: 35px;
+    padding: 26px;
 }
+
 .titulo-card {
     background-color: #e245ab;
     color: white;
-    padding: 12px;
+    padding: 7px;
     border-radius: 15px;
     text-align: center;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: bold;
-    width: 200px;
-    margin: 15px auto;
+    width: 165px;
+    margin: 6px auto;
     box-sizing: border-box;
 }
 
 .cards-container a {
     text-decoration: none;
 }
+
 .btn-editar img {
     width: 20px;
     height: 20px;
 }
+
 .footer {
     background-color: #538fde;
     color: #fff;
@@ -168,17 +187,19 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 50px;
-    font-size: 30px;
+    padding: 30px;
+    font-size: 24px;
     margin-top: auto;
 }
 
 .footer img {
-    width: 70px;
+    width: 55px;
     position: absolute;
-    right: 30px;
+    right: 20px;
 }
+
 @media (max-width: 768px) {
+
     .header-content {
         padding: 10px;
     }
@@ -190,31 +211,50 @@ body {
     .usuario-logado {
         right: 10px;
         top: 15px;
-        font-size: 14px;
+        font-size: 18px;
         padding: 5px;
     }
+
+    .menu {
+    left: 20px;
+    width: 210px;
+    padding: 8px;
+    margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 6px;
+    }
+
     .sidebar {
         width: 50px;
         padding: 10px;
     }
 
     .sidebar button {
-        font-size: 30px;
+        font-size: 45px;
     }
+
     .main-content {
         min-width: 0;
         width: 100%;
     }
+
     .area-cards {
         width: auto;
         max-width: none;
         margin: 20px 10px;
         padding: 15px;
     }
+
     .cards-container {
         grid-template-columns: 1fr;
         gap: 30px;
     }
+
     .card-agendamentos img {
         max-width: 250px;
     }
@@ -224,6 +264,7 @@ body {
     .card-sos img {
         max-width: 140px;
     }
+
     .titulo-card {
         width: 200px;
         font-size: 16px;
@@ -238,13 +279,13 @@ body {
         width: 45px;
         right: 10px;
     }
+
     .tabela-container {
         width: 100%;
         overflow-x: auto;
     }
-    @media (max-width: 768px) {
-        .tabela-container table {
-            min-width: 600px;
-        }
+
+    .tabela-container table {
+        min-width: 600px;
     }
 }
