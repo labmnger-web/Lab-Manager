@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Visualizar vidraria - LabManager</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/visualizar-vidraria.css">
+</head>
+
+<body>
+
+    <header class="header-content">
+        <div class="header-logo">
+            <a href="../html/index.html">
+                <img src="../img/logo.png" alt="Logo">
+            </a>
+
+            <div class="usuario-logado">
+                <span id="nome-usuario">Nome do usuário</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-content">
+
+        <aside class="sidebar">
+            <div class="menu-container">
+
+                <button id="menu-button">☰</button>
+
+                <div id="menu" class="menu">
+                    <a href="../html/index.html">Página inicial</a>
+                    <a href="../html/pag-agendamentos.html">Agendamento</a>
+                    <a href="../html/pag-vidrarias.html">Vidrarias</a>
+                    <a href="../html/pag-reagentes.html">Reagentes</a>
+                    <a href="../html/pag-sos.html">Contatos de emergência</a>
+                    <a href="../html/pag-equipamentos.html">Equipamentos</a>
+                    <a href="../html/pag-equipamentos.html">Histórico Geral</a>
+                </div>
+
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <h1 class="titulo-vidrarias">Visualizar vidraria</h1>
+
+            <div class="tabela-container tabela-visualizar-vidraria">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Vidraria</th>
+                            <th>Capacidade</th>
+                            <th>Unidade de medida</th>
+                            <th>Material</th>
+                            <th>Quantidade</th>
+                            <th>Armário</th>
+                            <th>Perda</th>
+                            <th>Data</th>
+                            <th>Motivo</th>
+                            <th>Entrada</th>
+                            <th>Preço</th>
+                        </tr>
+                        
+                    </thead>
+
+                    <tbody id="dados-vidraria">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <a href="../html/pag-vidrarias.html" class="voltar-vidrarias">
+                Voltar
+            </a>
+
+        </main>
+
+    </div>
+
+    <footer class="footer">
+        <p>Contato: labmnger@gmail.com</p>
+        <img src="../img/logoif.png" alt="Logo do LabManager">
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>
