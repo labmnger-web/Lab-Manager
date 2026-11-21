@@ -6,7 +6,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 .header-content {
     display: flex;
     align-items: center;
@@ -16,8 +15,8 @@ body {
 
 .header-logo img {
     width: 150px;
-    
 }
+
 .usuario-logado {
     position: absolute;
     right: 30px;
@@ -28,16 +27,18 @@ body {
     font-weight: bold;
     font-size: 21px;
 }
+
 .mensagem-boas-vindas {
     text-align: center;
     margin: 15px auto;
-     color: #e245abe7;
+    color: #e245abe7;
     font-size: 18px;
 }
 .page-content {
     display: flex;
     flex: 1;
 }
+
 .sidebar {
     width: 90px;
     min-height: 20vh;
@@ -57,7 +58,6 @@ body {
 .menu-container {
     position: relative;
 }
-
 .menu {
     display: none;
     position: absolute;
@@ -70,6 +70,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 7px 9px hwb(319 41% 7%);
 }
+
 .menu a {
     display: block;
     text-decoration: none;
@@ -84,96 +85,166 @@ body {
 .menu a:hover {
     background-color: #f7a9d5b6;
 }
-
 .main-content {
     flex: 2;
+    min-width: 0;
 }
-.cards-container {
-    display: grid;
-    grid-template-columns: 350px 350px;
-    justify-content: center;
-    gap: 40px;
-}
-
-.cards-container {
-    display: grid;
-    grid-template-columns: 350px 350px;
-    justify-content: center;
-    gap: 40px;
-}
-
-.card-agendamentos {
-     margin-left: -170px;
-
-}
-
-.card-agendamentos img {
-    width: 400px;
-    cursor: pointer;
-}
-
-.card-vidrarias {
-     margin-left: 200px;
-     margin-top: -70px;
-}
-
-.card-vidrarias img {
-    width: 200px;
-    cursor: pointer;
-}
-
-.card-reagentes {
-  margin-left: -90px;
-}
-
-.card-reagentes img {
-    width: 120px;
-    cursor: pointer;
-}
-
-.card-sos {
-    margin-left: 200px;
-        margin-top: 30px;
-}
-
-.card-sos img {
-    width: 180px;
-    cursor: pointer;
-}
-
-
 .area-cards {
-    width: 1300px;
+    width: 100%;
+    max-width: 2000px;
     margin: 50px auto;
-    padding: 80px;
+    padding: 70px;
+    box-sizing: border-box;
     border: 1px solid #e245ab;
     border-radius: 15px;
 }
-
 .cards-container {
     display: grid;
-    grid-template-columns: 350px 350px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-content: center;
-    gap: 80px;
+    justify-items: center;
+    gap: 50px 40px;
+}
+.card-agendamentos,
+.card-vidrarias,
+.card-reagentes,
+.card-sos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.card-agendamentos img {
+    width: 100%;
+    max-width: 390px;
+    padding: 45px;
+    cursor: pointer;
+}
+
+.card-vidrarias img {
+    width: 100%;
+    max-width: 190px;
+    cursor: pointer;
+}
+
+.card-reagentes img {
+    width: 100%;
+    max-width: 160px;
+    cursor: pointer;
+}
+
+.card-sos img {
+    width: 100%;
+    max-width: 190px;
+    cursor: pointer;
+    padding: 35px;
+}
+.titulo-card {
+    background-color: #e245ab;
+    color: white;
+    padding: 12px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    width: 200px;
+    margin: 15px auto;
+    box-sizing: border-box;
+}
+
+.cards-container a {
+    text-decoration: none;
 }
 .btn-editar img {
     width: 20px;
     height: 20px;
 }
 .footer {
-     background-color: #538fde;
+    background-color: #538fde;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-     padding: 40px;
-    font-size: 20px;
-      margin-top: auto;
+    padding: 50px;
+    font-size: 30px;
+    margin-top: auto;
 }
 
 .footer img {
     width: 70px;
     position: absolute;
     right: 30px;
+}
+@media (max-width: 768px) {
+    .header-content {
+        padding: 10px;
+    }
+
+    .header-logo img {
+        width: 110px;
+    }
+
+    .usuario-logado {
+        right: 10px;
+        top: 15px;
+        font-size: 14px;
+        padding: 5px;
+    }
+    .sidebar {
+        width: 50px;
+        padding: 10px;
+    }
+
+    .sidebar button {
+        font-size: 30px;
+    }
+    .main-content {
+        min-width: 0;
+        width: 100%;
+    }
+    .area-cards {
+        width: auto;
+        max-width: none;
+        margin: 20px 10px;
+        padding: 15px;
+    }
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .card-agendamentos img {
+        max-width: 250px;
+    }
+
+    .card-vidrarias img,
+    .card-reagentes img,
+    .card-sos img {
+        max-width: 140px;
+    }
+    .titulo-card {
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .footer img {
+        width: 45px;
+        right: 10px;
+    }
+    .tabela-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+    @media (max-width: 768px) {
+        .tabela-container table {
+            min-width: 600px;
+        }
+    }
 }
