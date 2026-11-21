@@ -68,7 +68,7 @@ button img {
     border-radius: 8px;
     cursor: pointer;
 }
-.titulo-cadastro {
+.titulo-vidrarias {
     color: #d856b1;
     text-align: center;  
     margin-top: 50px;    
@@ -131,7 +131,7 @@ button img {
     display: inline-block;
     padding: 12px 20px;
     margin: 0 20px;
-    background-color: #357cc4;
+    background-color: #d856b1;
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -139,5 +139,37 @@ button img {
 }
 
 .botao-cadastro:hover {
-    background-color: #2865a5;
+    background-color: #d856b1;
+}
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+
+    .titulo-vidrarias {
+        width: auto;
+        margin: 20px 10px;
+        font-size: 21px;
+        padding: 10px;
+    }
+
+    .cadastro-form {
+        width: auto;
+        max-width: none;
+        margin: 20px 10px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .cadastro-form input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cadastro-form button {
+        width: 100%;
+    }
+
 }
