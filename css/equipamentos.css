@@ -1,4 +1,3 @@
-
 table {
     width: 95%;
     margin: 20px auto;
@@ -6,16 +5,13 @@ table {
     text-align: center;
     background-color: #d856b1;
 }
-
 .titulo-equipamentos {
     text-align: center;
-    background-color: #d856b1;
-    color: white;
+    color: #d856b1;
     padding: 10px;
     width: 70%;
     margin: 30px auto;
-    border-radius: 8px;
-    font-size: 22px;
+    font-size: 26px;
 }
 th {
     padding: 10px 10px;
@@ -36,8 +32,13 @@ th {
 }
 
 button img {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
+}
+.link-editar img {
+    width: 20px;
+    height: 25px;
+    object-fit: contain;
 }
 .main-content form input {
     padding: 10px;
@@ -107,7 +108,7 @@ button img {
     display: inline-block;
     padding: 12px 20px;
     margin: 0px 20px;
-    background-color: #357cc4;
+    background-color: #d856b1;
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -115,5 +116,32 @@ button img {
 }
 
 .botao-cadastro:hover {
-    background-color: #2865a5;
+    background-color: #d856b1;
+}
+@media (max-width: 768px) {
+
+    .titulo-equipamentos {
+        width: auto;
+        margin: 20px 10px;
+        font-size: 21px;
+        padding: 10px;
+    }
+
+    .cadastro-form {
+        width: auto;
+        max-width: none;
+        margin: 20px 10px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .cadastro-form input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cadastro-form button {
+        width: 100%;
+    }
+
 }
