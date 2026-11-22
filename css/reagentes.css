@@ -65,13 +65,12 @@ button img {
     color: #777;
     margin-bottom: 30px;
 }
-
 .cadastro-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 450px;
-    margin: 0 auto 50px;
+    margin:   0 auto 50px;
     padding: 35px;
     background-color: white;
     border: 1px solid #dce8f5;
@@ -126,6 +125,10 @@ button img {
 
 .botao-cadastro:hover {
     background-color: #d856b1;
+}
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
 }
 @media (max-width: 768px) {
 
